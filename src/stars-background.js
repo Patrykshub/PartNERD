@@ -6,9 +6,6 @@ const StarsBackground = () => {
       <div id="stars"></div>
       <div id="stars2"></div>
       <div id="stars3"></div>
-      <div id="title">
-        <span>PartNERD</span>
-      </div>
     </div>
   );
 };
