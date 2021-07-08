@@ -1,22 +1,8 @@
-import './stars-background.css';
+import StarsBackground from "./stars-background";
+import "./stars-background.css";
 
 function App() {
-  return (
-    <div>
-      <div id="stars"></div>
-<div id="stars2"></div>
-<div id="stars3"></div>
-<div id="title">
-  <span>
-    PURE CSS
-  </span>
-  <br />
-  <span>
-    PARALLAX PIXEL STARS
-  </span>
-</div>
-    </div>
-  );
+  return <StarsBackground />;
 }
 
 export default App;
