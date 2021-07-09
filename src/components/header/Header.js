@@ -14,6 +14,11 @@ const Header = () => {
 
   return (
     <React.Fragment>
+    <header>
+        <div>
+            PartNERD
+        </div>
+    </header>
       <div
         style={{ opacity: !isActive ? 0 : 1, transition: "1.5s" }}
         className="title"

@@ -32,6 +32,10 @@
   z-index: 2;
   perspective: 200px;
 }
+.spinner:active {
+  transition: 0.3s;
+  opacity: 0;
+}
 
 i {
   display: block;
