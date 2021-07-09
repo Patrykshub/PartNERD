@@ -14,12 +14,15 @@ const Header = () => {
 
   return (
     <React.Fragment>
-        <div style={{opacity: !isActive ? 0 : 1, transform: 'all 5s'}} className="title">
-          <span onClick={spinnerHandler}>PartNERD</span>
-        </div>
-        <div style={{opacity: !isActive ? 0 : 1, transform: 'all 5s'}}>
+      <div
+        style={{ opacity: !isActive ? 0 : 1, transition: "1.5s" }}
+        className="title"
+      >
+        <span onClick={spinnerHandler}>PartNERD</span>
+      </div>
+      <div style={{ opacity: !isActive ? 0 : 1, transition: "1.5s" }}>
         <Spinner />
-        </div>
+      </div>
     </React.Fragment>
   );
 };
