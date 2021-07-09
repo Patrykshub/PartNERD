@@ -1,13 +1,8 @@
-.partNERD-spinner {
-  justify-content: center;
+.container {
+  margin-left: 5%;
+  margin-right: 5%;
   display: flex;
-
 }
-.partNERD {
-
-  background: -webkit-linear-gradient(white, #001b3f);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
+.buttons_right {
+  align-items: flex-end;
 }
