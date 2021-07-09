@@ -1,3 +1,29 @@
+
+.title {
+  position: absolute;
+  top: 49%;
+  left: 0;
+  right: 0;
+  color: #fff;
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 30px;
+  margin-left: 10px;
+  transition: 0.3s;
+}
+.title span {
+  background: -webkit-linear-gradient(white, #38495a);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.title span:hover {
+  text-shadow: 0px 0px 5px white;
+}
+
+
 .spinner {
   position: absolute;
   top: 50%;
