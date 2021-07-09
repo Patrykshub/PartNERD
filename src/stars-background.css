@@ -1,4 +1,9 @@
-#stars {
+html {
+  background: radial-gradient(ellipse at bottom, #101924 0%, #000000 100%);
+  overflow: hidden;
+}
+
+.stars {
   width: 1px;
   height: 1px;
   background: transparent;
@@ -180,7 +185,7 @@
     767px 706px #fff, 431px 334px #fff, 897px 15px #fff, 705px 146px #fff;
   animation: animStar 50s linear infinite;
 }
-#stars:after {
+.stars:after {
   content: " ";
   position: absolute;
   top: 2000px;
@@ -365,7 +370,7 @@
     767px 706px #fff, 431px 334px #fff, 897px 15px #fff, 705px 146px #fff;
 }
 
-#stars2 {
+.stars2 {
   width: 2px;
   height: 2px;
   background: transparent;
@@ -422,7 +427,7 @@
     323px 1676px #fff, 1593px 1616px #fff;
   animation: animStar 100s linear infinite;
 }
-#stars2:after {
+.stars2:after {
   content: " ";
   position: absolute;
   top: 2000px;
@@ -482,7 +487,7 @@
     323px 1676px #fff, 1593px 1616px #fff;
 }
 
-#stars3 {
+.stars3 {
   width: 3px;
   height: 3px;
   background: transparent;
@@ -514,7 +519,7 @@
     564px 455px #fff, 1675px 589px #fff;
   animation: animStar 150s linear infinite;
 }
-#stars3:after {
+.stars3:after {
   content: " ";
   position: absolute;
   top: 2000px;
@@ -549,21 +554,19 @@
     564px 455px #fff, 1675px 589px #fff;
 }
 
-#title {
+.title {
   position: absolute;
-  top: 50%;
+  top: 49%;
   left: 0;
   right: 0;
   color: #fff;
   text-align: center;
   font-family: "lato", sans-serif;
   font-weight: 300;
-  font-size: 50px;
-  letter-spacing: 10px;
-  margin-top: -60px;
-  padding-left: 10px;
+  font-size: 30px;
+  margin-left: 10px;
 }
-#title span {
+.title span {
   background: -webkit-linear-gradient(white, #38495a);
   background-clip: text;
   -webkit-background-clip: text;

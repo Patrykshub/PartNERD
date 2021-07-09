@@ -7,6 +7,4 @@
 html {
   font-family: "Noto Sans JP", sans-serif;
   height: 100%;
-  background: radial-gradient(ellipse at bottom, #101924 0%, #000000 100%);
-  overflow: hidden;
 }

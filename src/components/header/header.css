@@ -1,10 +1,11 @@
-.header {
-    margin-top: 10px;
-    margin-left: 10px;
-}
+.partNERD-spinner {
+  justify-content: center;
+  display: flex;
 
+}
 .partNERD {
-    background: -webkit-linear-gradient(white, #38495a);
+
+  background: -webkit-linear-gradient(white, #001b3f);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
