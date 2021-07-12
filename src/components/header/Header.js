@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Spinner from "../spinner/Spinner";
 import "./header.css";
 import "../spinner/spinner.css";
-import Button from './Button';
+import Button from "./Button";
 
 const Header = () => {
   const [isActive, setIsActive] = useState(true);
@@ -15,25 +15,25 @@ const Header = () => {
 
   return (
     <React.Fragment>
-      <header style={{ opacity: !isActive ? 1 : 0, transition: '1.5s'}}>
+      <header style={{ opacity: !isActive ? 1 : 0, transition: "1.5s" }}>
         {!isActive && (
-          <div className='container'>
+          <div className="container">
             <div>PartNERD</div>
-            <div className='buttons_right'>
-            <Button>Button 1</Button>
-            <Button>Button 2</Button>
-          </div>
+            <div className="buttons_right">
+              <Button>Button 1</Button>
+              <Button>Button 2</Button>
+            </div>
           </div>
         )}
       </header>
 
       <div
-        style={{ opacity: !isActive ? 0 : 1, transition: "1.5s" }}
+        style={{ opacity: !isActive ? 0 : 1, transition: "1.5s", display: isActive ? 'show' : 'none' }}
         className="title"
       >
         <span onClick={spinnerHandler}>PartNERD</span>
       </div>
-      <div style={{ opacity: !isActive ? 0 : 1, transition: "1.5s" }}>
+      <div style={{ opacity: !isActive ? 0 : 1, transition: "1.5s", display: isActive ? 'show' : 'none' }}>
         <Spinner />
       </div>
     </React.Fragment>

@@ -1,10 +1,12 @@
-import { Fragment } from 'react';
+import { Fragment } from "react";
 
-import './button.css'
+import "./button.css";
 
 const Button = (props) => {
-    return (
-<Fragment><div className='button'>{props.children}</div></Fragment>
-    )
-}
+  return (
+    <Fragment>
+      <div className="button">{props.children}</div>
+    </Fragment>
+  );
+};
 export default Button;

@@ -6,10 +6,9 @@ import Header from "./components/header/Header";
 function App() {
   return (
     <React.Fragment>
-  <Header />
-  <StarsBackground />
-  </React.Fragment>
-  
+      <Header />
+      <StarsBackground />
+    </React.Fragment>
   );
 }
 
