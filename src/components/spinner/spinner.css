@@ -10,16 +10,20 @@
   font-weight: 300;
   font-size: 30px;
   margin-left: 10px;
-  transition: 1s;
 }
+
 .title span {
   background: -webkit-linear-gradient(white, #38495a);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   cursor: pointer;
-  transition: 0.3s;
 }
+@keyframes span {
+  from {opacity: 0;}
+  to {display: none;}
+}
+
 .title span:hover {
   text-shadow: 0px 0px 5px white;
 }

@@ -2,7 +2,16 @@
   margin-left: 5%;
   margin-right: 5%;
   display: flex;
+  color: white;
+  justify-content: space-between;
+  margin-top: 1rem;
 }
-.buttons_right {
-  align-items: flex-end;
+
+.partNERD {
+  font-size: 20px;
+  background: -webkit-linear-gradient(#8400ff, #8400ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: white;
 }
