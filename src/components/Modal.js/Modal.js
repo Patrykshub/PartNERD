@@ -1,5 +1,6 @@
-import React, { Fragment, } from "react";
+import React, { Fragment, useState } from "react";
 import Button from "../header/Button";
+import cls from "./AddUser.module.css";
 
 import classes from "./Modal.module.css";
 
@@ -10,27 +11,40 @@ const Backdrop = (props) => {
 const ModalOverlay = (props) => {
   return (
     <div className={classes.modal}>
-      <div className={classes.content}>{props.children}</div>
+      <div className={`${classes.content} ${classes.buttons_input}}`}>{props.children}</div>
     </div>
   );
 };
 
 const Modal = (props) => {
+  const addUserHandler = (event) => {
+    event.preventDefault();
+  };
+    const [enteredName, setEnteredName] = useState('');
+  
+    const nameInputHandler = event => {
+      setEnteredName(event.target.value);
+    }
+    
+//   const logInHandler = () => {
+
+//   }
+
   return (
     <Fragment>
       {<Backdrop onHideModal={props.onHideModal} />}
       <ModalOverlay>
-        <form>
-          <div>
-            <label htmlFor="username">Username</label>
-            <input id="username" type="text"></input>
-          </div>
-          <div>
-            <label htmlFor="password">Password</label>
-            <input id="password" type="text"></input>
-          </div>
-          <Button>Close</Button>
+        <form onSubmit={addUserHandler} className={cls.input}>
+          <label htmlFor="username">Username</label>
+          <input id="username" type="text" onChange={nameInputHandler}></input>
+          <label htmlFor="password">Password</label>
+          <input id="password" type="text"></input>
+          <div className={cls.buttons_input}>
+          <Button onSubmit={""}>Log in</Button>
+          <Button onClick={props.onHideModal}>Close</Button>
+        </div>
         </form>
+        
       </ModalOverlay>
     </Fragment>
   );

@@ -25,7 +25,7 @@ const Header = (props) => {
         {!isActive && (
           <div className="container">
             <div className="partNERD">PartNERD</div>
-            <div className="buttons_right">
+            <div>
               <Button onClick={props.onShowModal}>Log in</Button>
               <Button onClick={props.onShowRegister}>Register</Button>
             </div>
