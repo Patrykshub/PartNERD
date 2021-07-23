@@ -8,8 +8,8 @@
 }
 
 .partNERD {
-  font-size: 20px;
-  background: -webkit-linear-gradient(#8400ff, #8400ff);
+  font-size: 30px;
+  background: -webkit-linear-gradient(white, #38495a);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
